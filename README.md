@@ -52,6 +52,8 @@ mongock.transaction-enabled=true
 ## Guidelines/Best Practices
 - Long running patches should be run separately using node mongodb scripts to eliminate the server load
 - Patches/ChangeUnits should be managed by the system/release version by changeing the `@ChangeUnit`'s system version as well as the `mongock.start-system-version` and `mongock.end-system-version` in _application.properties_
+- ChangeUnit order should be managed when merging each PR. Order must be unique across all ChangeLog classes.
+- ChangeLog file naming convention: `OperationSummaryChangeLogDateTime` (ex: UpdateUserStatus202405071630)
 
 ## Additional Resources
 - [Mongock Integration Demo Presentation](https://docs.google.com/presentation/d/1liqpSPzoZrn_QpvoQmfhdm7EaVHsJb7KmhgFr2329lw/edit?usp=sharing)
