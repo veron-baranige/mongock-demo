@@ -13,8 +13,6 @@ import org.springframework.data.mongodb.core.query.Update;
 
 import java.util.Arrays;
 
-import static org.springframework.data.mongodb.core.query.Criteria.where;
-
 @ChangeUnit(id = "202406051100-update-gmail-user-status", order = "2", author = "Veron", systemVersion = "2")
 public class UpdateGmailUserStatus202406051100Changelog {
     private final MongoTemplate mongoTemplate;
