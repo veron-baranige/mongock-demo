@@ -45,10 +45,16 @@ mongock.transaction-enabled=true
 5. Add ChangeUnit classes(db patches) inside the defined package of `mongock.migration-scan-package`
 
 
-## Working with local MongoDB instance
+## Working with Local MongoDB Instance
 - For transactions to work properly with the transaction manger config, the connected MongoDB should be running as a replica set
 - Change application property `mongock.transaction-enabled` to `false` to avoid exceptions in local environment
 
 ## Guidelines/Best Practices
 - Long running patches should be run separately using node mongodb scripts to eliminate the server load
 - Patches/ChangeUnits should be managed by the system/release version by changeing the `@ChangeUnit`'s system version as well as the `mongock.start-system-version` and `mongock.end-system-version` in _application.properties_
+
+## Additional Resources
+- [Mongock Integration Demo Presentation](https://docs.google.com/presentation/d/1liqpSPzoZrn_QpvoQmfhdm7EaVHsJb7KmhgFr2329lw/edit?usp=sharing)
+- [Mongock Docs - Spring Boot Runner](https://docs.mongock.io/v5/runner/springboot)
+- [Mongock 101](https://hevodata.com/learn/mongock/)
+- [5 steps to Use Mongock for MongoDB Changelogs](https://dev.to/omaryaya/5-steps-to-use-mongock-for-mongodb-changelogs-42ho)
