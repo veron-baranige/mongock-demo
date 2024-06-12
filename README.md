@@ -56,6 +56,7 @@ mongock.transaction-enabled=true
 - ChangeLog file naming convention: `OperationSummaryChangeLogDateTime` (ex: UpdateUserStatus202405071630)
 
 ## Additional Resources
+- ChangeUnit Templates: _src/main/java/dev/veronb/mongock_demo/templates_
 - [Mongock Integration Demo Presentation](https://docs.google.com/presentation/d/1liqpSPzoZrn_QpvoQmfhdm7EaVHsJb7KmhgFr2329lw/edit?usp=sharing)
 - [Mongock Docs - Spring Boot Runner](https://docs.mongock.io/v5/runner/springboot)
 - [Mongock 101](https://hevodata.com/learn/mongock/)
